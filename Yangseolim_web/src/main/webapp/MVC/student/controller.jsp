@@ -7,6 +7,8 @@
 %>
 
 <jsp:useBean id="bean" class="model.StudentBean" scope="session" />
+<jsp:useBean id="studentDO" class="model.StudentDO" scope="request" />
+
 
 <%
 

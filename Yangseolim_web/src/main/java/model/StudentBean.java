@@ -29,9 +29,39 @@ public class StudentBean {
 		
 	}
 	
-	public StudentDO add(StudentDO studentDO) {
+	public int add(StudentDO studentDO) {
+		int rowCount = 0;
 		
 		sql = "insert into Student values(?,?,?,?,?,?,?);";
+		
+		try {
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, studentDO.getName());
+			pstmt.setInt(2, studentDO.getId());
+			pstmt.setString(3, studentDO.getSex());
+			pstmt.setString(4, studentDO.getKor());
+			pstmt.setString(5, studentDO.getEng());		
+			pstmt.setString(6, studentDO.getMath());
+			pstmt.setString(7, studentDO.getSci());
+			rowCount = pstmt.executeUpdate();
+			
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+		}
+		finally {
+			try {
+				if(!pstmt.isClosed()) {
+					pstmt.close();
+				}
+			}
+			catch(Exception e) {
+				e.printStackTrace();
+			}
+		}
+		
+		
+		return rowCount;
 	}
 	
 	
