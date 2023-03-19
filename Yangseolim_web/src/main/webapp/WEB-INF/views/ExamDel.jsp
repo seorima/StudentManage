@@ -9,6 +9,11 @@
 <body>
 
 	<h2>학생 정보 삭제</h2>
+	<form method="POST">
+			<input type="hidden" name="command" value="moveToMain"/>
+			<input type="submit" value="메인" />
+	</form>
+	
 	<hr/>
 	
 	<form method = "POST">

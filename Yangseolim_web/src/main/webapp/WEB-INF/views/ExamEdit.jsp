@@ -10,6 +10,11 @@
 
 
 	<h2>성적 변경</h2>
+	
+	<form method="POST">
+			<input type="hidden" name="command" value="moveToMain"/>
+			<input type="submit" value="메인" />
+	</form>
 	<hr/>
 	
 	<form method = "POST">
