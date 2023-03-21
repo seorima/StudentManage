@@ -33,7 +33,6 @@
 	    	  
 	    	  else if(command != null && command.equals("examadd")){
 	    		  bean.add(studentDO);
-	    		  
 	    		  response.sendRedirect("controller.jsp");
 		      }
 	    	  

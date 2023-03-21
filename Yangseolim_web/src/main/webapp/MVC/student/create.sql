@@ -1,13 +1,13 @@
 drop table Student;
 
 create table Student(
-	name varchar2(20),
-	id int,
-	sex varchar2(20),
-	kor int,
-	eng int,
-	math int,
-	sci int 
+	name varchar2(20) constraint student_name_nn not null,
+	id int constraint student_id_pk primary key ,
+	sex varchar2(20) constraint student_sex_nn not null ,
+	kor int constraint student_score_korean_nn not null ,
+	eng int constraint student_score_english_nn not null ,
+	math int constraint student_score_math_nn not null,
+	sci int constraint student_score_science_nn not null
 );
 
 insert into Student 

@@ -19,8 +19,8 @@
 	
 	<form method = "POST">
 		<fieldset>
-			<label for = "checkid">학번을 입력하세요</label>
-			<Input type="number" name="checkid" id="checkid" />
+			<label for = "id">학번을 입력하세요</label>
+			<Input type="number" name="id" id="id" />
 			
 			<input type="hidden" name="command" value = "examcheck"/> 
 			<Input type="submit" value="조회" />

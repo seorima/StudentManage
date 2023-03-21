@@ -4,10 +4,10 @@ public class StudentDO {
 	private String name;
 	private int id;
 	private String sex;
-	private String kor;
-	private String eng;
-	private String math;
-	private String sci;
+	private int kor;
+	private int eng;
+	private int math;
+	private int sci;
 	
 	public StudentDO() {
 		
@@ -37,37 +37,39 @@ public class StudentDO {
 		this.sex = sex;
 	}
 
-	public String getKor() {
+	public int getKor() {
 		return kor;
 	}
 
-	public void setKor(String kor) {
+	public void setKor(int kor) {
 		this.kor = kor;
 	}
 
-	public String getEng() {
+	public int getEng() {
 		return eng;
 	}
 
-	public void setEng(String eng) {
+	public void setEng(int eng) {
 		this.eng = eng;
 	}
 
-	public String getMath() {
+	public int getMath() {
 		return math;
 	}
 
-	public void setMath(String math) {
+	public void setMath(int math) {
 		this.math = math;
 	}
 
-	public String getSci() {
+	public int getSci() {
 		return sci;
 	}
 
-	public void setSci(String sci) {
+	public void setSci(int sci) {
 		this.sci = sci;
 	}
+
+	
 
 	
 

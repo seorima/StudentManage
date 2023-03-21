@@ -18,7 +18,7 @@
 	
 	<form method = "POST">
 		<fieldset>
-			<label for = "delname">삭제하실 학생의 이름을 입력하세요</label>
+			<label for = "name">삭제하실 학생의 이름을 입력하세요</label>
 			<Input type="text" name="delname" id="delname" />
 			
 			<input type="hidden" name="command" value = "examdel"/> 
